@@ -1,0 +1,7 @@
+﻿User-agent: Yandex
+Disallow: /cgi-bin
+Host: proslide.com.ua
+
+User-agent: *
+Disallow: /cgi-bin
+Sitemap: http://proslide.com.ua/sitemap.xml

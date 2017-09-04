@@ -1,0 +1,123 @@
+
+
+/*-------------------------------------------------------*/
+		/* Portfolio Section */
+	/*-------------------------------------------------------*/
+    #portfolio {
+		width: 575px;
+		overflow:hidden;
+	}
+	#portfolio .extra-text {
+		font-size:20px;
+		padding:24px 0;
+		border-bottom:1px solid #ededed;
+		color: #999;
+		margin-bottom:20px;
+	}
+	#portfolio h5{ 
+		color:#97bb01; 
+		margin-bottom: 0px;
+		margin-top: 10px;
+	}
+	#portfolio a {
+		text-decoration: none;
+	}
+	/* Filter menu */
+	#portfolio-filter {
+		overflow:hidden;
+		padding:15px 0;
+	}
+	#portfolio-filter li a {
+		float:left;
+		color:#ffffff;
+		margin-top: -7px;
+		margin-right:12px;
+		padding:6px 10px;
+		margin-bottom:5px;
+		border:1px solid #97bb01;
+		border-radius: 5px;
+		background-color: #97bb01;
+		font-size: 14px;
+		text-decoration: none;
+		-webkit-transition-duration: 0.1s;
+		-moz-transition-duration: 0.1s;
+		transition-duration: 0.1s;
+	}
+	#portfolio-filter li a:hover, #portfolio-filter li a.current {
+		background-color: #76a300;
+	}
+	
+	/* Images list */
+	
+	#portfolio-list li {
+		height:190px;
+		width:158px;
+		text-align:center;
+		margin: 10px;
+		padding: 5px;
+		float: left;
+    	border-radius: 3px;
+    	text-decoration:none; 
+    	-webkit-box-shadow: 0 1px 1px rgba(191,191,191,0.75);
+    	-moz-box-shadow: 0 1px 1px rgba(191,191,191,0.75);
+   		box-shadow: 0 1px 1px rgba(191,191,191,0.75);
+	}
+	#portfolio-list li:hover {
+		-webkit-box-shadow:0 0 15px rgba(0,0,0,0.6)!important;
+    	-moz-box-shadow:0 0 15px rgba(0,0,0,0.6)!important;
+    	box-shadow:0 0 15px rgba(0,0,0,0.6)!important; 
+	}
+	#portfolio-list img {
+		height:120px; 
+		width:156px;
+		cursor: pointer;
+	}
+	#portfolio-list li:hover .title {
+		color:#97bb01;
+	}
+	#portfolio-list li .title {
+		font-size:18px;
+		margin-top:8px;
+		font-weight: 400;
+		color: #97bb01;
+		margin-bottom:0;
+	}
+	#portfolio-list li .categorie {
+		font-size:11px;
+		line-height:25px;
+		color:#97bb01;
+		text-decoration: none;
+	}
+	/* adipoli */
+		.adipoli-wrapper {
+		margin:auto;
+		position:relative;
+		display: inline-block;
+	}
+	.adipoli-wrapper>img {
+		position: absolute;
+		z-index: 1;
+	}
+	.adipoli-before {
+		position: absolute;
+		z-index: 5;
+	}
+	.adipoli-after {
+		position: absolute;
+		z-index: 10;
+	}
+	.adipoli-slice {
+		display:block;
+		position:absolute;
+		z-index:15;
+		height:100%;
+	}
+	.adipoli-box {
+		display:block;
+		position:absolute;
+		z-index:15;
+	}
+	
+
+
+
