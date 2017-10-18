@@ -51,7 +51,7 @@ body
 			height: 100vh
 			background-color: $gray
 			.top-line
-				padding-top: 40px
+				padding-top: 35px
 				position: absolute
 				width: 100%
 				z-index: 1
@@ -60,7 +60,7 @@ body
 	img
 		width: 125px
 		height: auto
-		margin-left: 45px
+		margin-left: 40px
 
 section, header
 	position: relative
@@ -74,5 +74,18 @@ section
 	display: block
 	max-width: 100%
 	height: auto
+
+.hamburger
+	right: 0
+	position: absolute
+	top: 34px
+	.hamburger-box
+		width: 34px
+		.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+			border-radius: 0
+			color: $white
+			width: 34px
+			height: 2px
+			background-color: $white
 
 @import "media" // Всегда в конце
