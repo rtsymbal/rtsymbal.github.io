@@ -3,7 +3,7 @@ $(function() {
 	$('#my-menu').mmenu({
 		extensions: [ 'theme-black', 'fx-menu-slide', 'pagedim-black' ],
 		navbar: {
-			title: '<img src="img/logo.svg">'
+			title: '<img src="img/logo-white.svg">'
 		},
 		offCanvas: {
 			position: 'right'
@@ -13,9 +13,14 @@ $(function() {
 	var api = $('#my-menu').data('mmenu');
 	
 	api.bind('open:finish', function() {
-		$('.hamburger').addClass('is-active');
-	}).bind('close:finish', function() {
-		$('.hamburger').removeClass('is-active');
+		setTimeout(function() {
+			$('.hamburger').addClass('is-active');
+		}, 100);
+	})
+	api.bind('close:finish', function() {
+		setTimeout(function() {
+			$('.hamburger').removeClass('is-active');
+			}, 100);
 	});
 });
 
