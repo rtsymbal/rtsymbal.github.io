@@ -94,10 +94,37 @@ section
 	border: none
 	.mm-title 
 		padding: 0
+		margin: 20px 0
 		img 
 			width: 128px
 			height: auto
-			color: #fff
+
+html.mm-opened
+	overflow-y: scroll
+
+.mm-panels > .mm-panel .mm-hasnavbar
+	right: -18px
+
+.mm-listview>li:not(.mm-divider):after
+	display: none
+
+.mm-menu.mm-theme-black .mm-listview>li.mm-selected>a:not(.mm-next), .mm-menu.mm-theme-black .mm-listview>li.mm-selected>span
+	background-color: transparent
+	color: $accent
+
+.mm-listview
+	>li
+		>a
+			padding:
+				left: 14%
+				right: 14%
+				top: 8px
+			&:hover
+				transition: .25s ease
+				background-color: $accent
+		&.active
+			&>a
+				color: $accent
 
 .mm-panels>.mm-panel:after, .mm-panels>.mm-panel:before
 	height: 0
