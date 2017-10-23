@@ -22,25 +22,25 @@ $(function() {
 			$('.hamburger').removeClass('is-active');
 			}, 100);
 	});
+
+	$('.carousel-services').owlCarousel({
+		loop: true,
+		nav: true,
+		smartspeed: 700,
+		navText: ['<i class="fa fa-angle-double-left"></i>', '<i class="fa fa-angle-double-right"></i>'],
+		responsiveClass: true,
+		responsive: {
+			0: {
+				items:1
+			},
+			800: {
+				items: 2
+			},
+			1100: {
+				items: 3
+			}
+		}
+	});
+
 });
 
-// var $menu = $("#my-menu").mmenu({
-//    //   options
-// });
-// var $icon = $("#my-icon");
-// var API = $menu.data( "mmenu" );
-
-// $icon.on( "click", function() {
-//    API.open();
-// });
-
-// API.bind( "open:finish", function() {
-//    setTimeout(function() {
-//       $icon.addClass( "is-active" );
-//    }, 100);
-// });
-// API.bind( "close:finish", function() {
-//    setTimeout(function() {
-//       $icon.removeClass( "is-active" );
-//    }, 100);
-// });
