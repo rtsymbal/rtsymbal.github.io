@@ -182,10 +182,6 @@ html.mm-opened
 	padding-top: 10px
 
 .header-flex
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flex
-	display: -o-flex
 	display: flex
 	height: 100%
 	position: relative
@@ -206,10 +202,6 @@ html.mm-opened
 	p
 		font-size: 14px
 		text-transform: uppercase
-		display: -webkit-flex
-		display: -moz-flex
-		display: -ms-flex
-		display: -o-flex
 		display: flex
 		align-items:  center
 		white-space: nowrap
@@ -250,10 +242,6 @@ html.mm-opened
 
 .header-social
 	position: absolute
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flex
-	display: -o-flex
 	display: flex
 	right: 0
 	height: 100%
@@ -304,6 +292,54 @@ $colors: $blue, $green, $accent
 @for $i from 1 through length($colors)
 	.carousel-services .owl-item:nth-child(#{length($colors)}n+#{$i})
 		background-color: nth($colors, $i)
+
+.carousel-services
+	background-color: $gray
+
+	&-item
+		color: $white
+		font-size: 18px
+		font-weight: 300
+		position: relative
+		display: flex
+		flex-direction: column-reverse
+		&:hover
+			.carousel-services-image
+				opacity: 1
+		.carousel-logo
+			text-align: center
+			img
+			 width: 100px
+			 height: auto
+			 display: inline-block
+	.owl-item
+		&:nth-child(2n+2)
+			.carousel-services-item
+				flex-direction: column
+	&-image
+		background-size: cover
+		background-position: center
+		opacity: .8
+		transition: opacity .5s ease
+
+	&-content
+		display: flex
+		position: relative
+		padding: 60px 10%
+
+	&-composition
+		margin: auto
+		text-align: center
+		width: 100%
+		.h3
+			font-weight: 800
+			font-size: 28px
+			margin-top: 5px
+			margin-bottom: 20px
+
+.owl-carousel
+	.owl-item
+		backface-visibility: inherit
 
 
 @import "media" // Всегда в конце
