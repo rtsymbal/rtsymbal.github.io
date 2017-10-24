@@ -120,6 +120,19 @@ section
 		&::after
 			opacity: .32
 
+	&.button-white
+		background-color: $white
+		color: $text-dark
+		&:after
+			background-color: rgba(#000, .6)
+		&:hover
+			&:after
+				background-color: rgba(#000, .2)
+		&:active
+			&:after
+				background-color: rgba(#000, .4)
+
+
 .hamburger
 	right: 0
 	position: absolute
@@ -323,7 +336,6 @@ $colors: $blue, $green, $accent
 		transition: opacity .5s ease
 
 	&-content
-		display: flex
 		position: relative
 		padding: 60px 10%
 
@@ -336,6 +348,42 @@ $colors: $blue, $green, $accent
 			font-size: 28px
 			margin-top: 5px
 			margin-bottom: 20px
+			span
+				text-transform: normal
+				font-size: 18px
+				font-weight: 300
+				display: block
+
+	&-list
+		margin: 0
+		padding: 0
+		list-style-type: none
+		margin-bottom: 25px
+		li
+			padding: 9px
+			border-bottom: 1px solid rgba($white, .2)
+			&:last-child
+				border-bottom: none
+			strong
+				color: $text-dark
+
+	.owl-nav
+		position: absolute
+		top: 0
+		width: 100%
+		> div
+			width: 64px
+			height: 64px
+			background-color: $white
+			color: $text-dark
+			position: absolute
+			text-align: center
+			line-height: 64px
+			font-size: 26px
+			&.owl-prew
+				left: 0
+			&.owl-next
+				right: 0
 
 .owl-carousel
 	.owl-item
