@@ -405,6 +405,8 @@ $colors: $blue, $green, $accent
 	&-king
 		p
 			margin: 30px 0
+			font-size: 17px
+			line-height: 1.75
 
 .section-overley
 	&:before
@@ -416,6 +418,38 @@ $colors: $blue, $green, $accent
 		height: 100% 
 		background-color: $text-dark
 		opacity: .8
+
+.fotorama
+ background-color: rgba($text-dark, .5)
+	&__nav
+	 	&-wrap
+	 		position: absolute
+	 		bottom: 15px
+	 		padding: 0 30px
+	 		width: 100%
+	&__thumb
+		border: 3px $text-dark solid
+		transition: border-color .5 ease
+		&-border
+			border-color: $accent
+			transition: border-color .5 ease
+	&__nav:after, &_stage:after, 
+	&__nav:before, &_stage:before
+		display: none
+
+	&__arr-
+		&-next, &-prev
+			&:before
+				font-family: fontawesome
+				font-size: 40px
+		&-next
+			&:before
+				content: '\f105'
+		&-prev
+			&:before
+				position: absolute
+				content: '\f104'
+				right: 0
 
 
 
