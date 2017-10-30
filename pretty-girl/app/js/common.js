@@ -68,10 +68,10 @@ $(function() {
 		ths.html(ths.html().replace(/^(\S+)/, '<span>$1</span>'));
 	});
 
-	$('select').selectize({
-		craate: true,
+	// $('select').selectize({
+	// 	craate: true,
 
-	});
+	// });
 	//Resize window
 	function onResize() {
 			$('.carousel-services-contont').equalHeights();

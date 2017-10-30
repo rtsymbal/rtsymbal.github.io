@@ -27,13 +27,6 @@
 	color: #666
 	opacity: 1
 
-body input:focus:required:invalid,
-body textarea:focus:required:invalid
-	color: #666
-body input:required:valid,
-body textarea:required:valid
-	color: #666
-
 html, body
 	height: 100%
 
@@ -465,11 +458,22 @@ $colors: $blue, $green, $accent
 				content: '\f104'
 				right: 0
 
+input, textarea, select
+	background-color: transparent
+	border: rgba(#000, .1) 1px solid
+	border-bottom: rgba(#000, .1) 2px solid
+	border-radius: 2px
+	padding: 8px 22px
+	outline: none
+	display: inline-block
+	font-size: 16px
+
+
 .success
 	display: none
 
 .callback
-	padding: 25% 0
+	padding: 15% 0
 	position: relative
 	&-logo
 		img
@@ -481,6 +485,27 @@ $colors: $blue, $green, $accent
 
 	p
 	 margin-top: 0
+
+	input, textarea, select
+		color: $white
+		width: 100%
+		margin-top: 17px
+
+		&::-webkit-input-placeholder
+			color: $white
+			opacity: 1
+		&::-moz-placeholder
+			color: $white
+			opacity: 1
+		&::-ms-input-placeholder
+			color: $white
+
+		option
+			color: $text-dark
+
+	.button
+		margin: 40px 0
+
 
 
 
