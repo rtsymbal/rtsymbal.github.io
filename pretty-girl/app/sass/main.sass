@@ -76,12 +76,14 @@ section
 	&.inverse
 		color: $white
 		background-color: $text-dark
+		&.s-call
+			background-color: #fff
 	.h2
 		font-size: 30px
 		font-weight: 800
-		color: $accent
+		color: $white
 		span
-			color: $white
+			color: $accent
 
 .img-responsive
 	display: block
@@ -408,6 +410,18 @@ $colors: $blue, $green, $accent
 			font-size: 17px
 			line-height: 1.75
 
+	&-call
+		background-size: contain
+		background-repeat: no-repeat
+		background-position: 0%
+		&:before
+			content: ''
+			width: 50%
+			height: 100%
+			right: 0
+			position: absolute
+			background-color: rgba($accent, .90)
+
 .section-overley
 	&:before
 		content: ''
@@ -450,6 +464,25 @@ $colors: $blue, $green, $accent
 				position: absolute
 				content: '\f104'
 				right: 0
+
+.success
+	display: none
+
+.callback
+	padding: 25% 0
+	position: relative
+	&-logo
+		img
+			width: 100px
+			height: auto
+
+	.formhead
+		margin: 0
+
+	p
+	 margin-top: 0
+
+
 
 
 

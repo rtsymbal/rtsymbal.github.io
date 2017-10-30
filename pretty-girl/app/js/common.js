@@ -63,9 +63,14 @@ $(function() {
 		ths.html(ths.html().replace(/(\S+)\s*$/, '<span>$1</span>'));
 	});
 
-	$('section .h2').each(function() {
+	$('.s-king .h2').each(function() {
 		var ths = $(this);
 		ths.html(ths.html().replace(/^(\S+)/, '<span>$1</span>'));
+	});
+
+	$('select').selectize({
+		craate: true,
+
 	});
 	//Resize window
 	function onResize() {
