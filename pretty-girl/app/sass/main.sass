@@ -470,6 +470,34 @@ input, textarea, select,
 	display: inline-block
 	font-size: 16px
 
+.selectize-control .selectize-input
+	box-shadow: none
+	overflow: inherit
+	line-height: inherit
+	text-align: left
+	input
+	 font-size: inherit
+	&.dropdown-active::before
+		background-color: transparent
+
+.selectize-control.single
+	.selectize-input, &.dropdown-active
+		&::after
+			border: none
+			content: '\f107'
+			font-family: fontawesome
+			position: absolute
+			right: 30px
+			top: 11px
+		&.dropdown-active::after
+			content: '\f106'
+	.selectize-dropdown
+		font-size: 15px
+		&-content
+			.option
+				padding: 10px 23px
+				&.active
+					background-color: lighten($accent, 43)
 
 .success
 	display: none
@@ -492,10 +520,11 @@ input, textarea, select,
 
 
 .callback
-	padding: 15% 0
+	padding: 13% 0
 	position: relative
 	&-logo
 		img
+			margin-bottom: 7px
 			width: 100px
 			height: auto
 
@@ -525,7 +554,7 @@ input, textarea, select,
 			color: $text-dark
 
 	.button
-		margin: 40px 0
+		margin-top: 40px
 
 
 
