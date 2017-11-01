@@ -418,6 +418,13 @@ $colors: $blue, $green, $accent
 			position: absolute
 			background-color: rgba($accent, .90)
 
+	&-partners.section-overlay
+		&::before
+			background-color: $white
+		.h2
+			margin-top: 0px
+			color: $accent
+
 .section-overlay
 	&:before
 		content: ''
@@ -619,7 +626,38 @@ input, textarea, select,
 		right: -40px
 		transform: rotate(0)
 
-
+.partners
+	.partner
+		height: 100%
+		// display: flex
+		margin: auto
+	.owl-stage  
+		display: flex
+	.owl-item
+		margin-top: 30px
+		img
+			max-width: 100%
+			width: auto
+			display: inline-block
+			margin: auto
+	.owl-nav
+		position: absolute
+		top: 0
+		width: 100%
+		z-index: 2
+		> div
+			position: absolute
+			top: 60px
+			color: $text-dark
+			font-size: 30px
+			transition: opacity .5s ease
+			padding: 0 10px
+			&:hover
+			 opacity: .6
+			&.owl-prev
+				left: -60px
+			&.owl-next
+				right: -60px
 
 
 @import "media" // Всегда в конце
