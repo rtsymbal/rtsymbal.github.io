@@ -63,13 +63,20 @@ $(function() {
 		ths.html(ths.html().replace(/(\S+)\s*$/, '<span>$1</span>'));
 	});
 
-	$('.s-king .h2').each(function() {
+	$('.h-first, .s-king .h2').each(function() {
 		var ths = $(this);
 		ths.html(ths.html().replace(/^(\S+)/, '<span>$1</span>'));
 	});
 
 	$('select').selectize();
 
+	$('.reviews').owlCarousel({
+		loop: true,
+		items: 1,
+		smartSpeed: 700,
+		nav: false,
+		autoHeight: true,
+	});
 
 	//E-mail Ajax Send
 	$("form.callback").submit(function() { //Change
