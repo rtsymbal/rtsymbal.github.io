@@ -352,6 +352,8 @@ html.mm-opened
 	 	margin-right: 7px
 	 	font-size: 20px
 	 	opacity: .5
+	 	position: relative
+	 	top: 2px
 	.phone-h
 		margin-left: 6px
 
@@ -675,9 +677,13 @@ input, textarea, select,
 
 .partners
 	.partner
-		height: 160px
 		display: flex
 		margin: auto
+		height: 100%
+	.owl-stage
+		display: flex
+	.owl-item
+		margin-top: 20px
 		img
 			padding: 0 20px
 			max-width: 100%
@@ -719,12 +725,11 @@ input, textarea, select,
 		color: #666
 		padding: 0
 		margin:
-			bottom: 15px
 			top: 15px
 		font-size: 14px
 
 .social-footer
-	margin-top: 40px
+	margin-top: 0px
 	.soc
 		li
 			display: inline-block
@@ -750,7 +755,7 @@ input, textarea, select,
 			color: #979797
 			transition: color .35s ease
 			display: inline-block
-			padding: 4px 0
+			padding: 4.5px 0
 			text-decoration: underline
 			padding-left: 20px
 			position: relative
@@ -774,7 +779,7 @@ input, textarea, select,
 	font-size: 15px
 	padding-left: 25px
 	padding-top: 6px
-	margin: 0 0 25px
+	margin: 0 0 15px
 	.fa
 		position: absolute
 		left: 0
@@ -783,15 +788,14 @@ input, textarea, select,
 		color: #555
 	.footer-phone
 		font-size: 26px
-		font-family: firasanse, sanse-serif
-		padding-top: 15px
+		padding-top: 11px
 		display: block
 		.fa
-			top: 30px
-			font-size: 25px
+			top: 32px
+			font-size: 20px
 
 .map
-	max-height: 210px
+	max-height: 200px
 	opacity: .9
 	transition: opacity .5s ease
 	&:hover
