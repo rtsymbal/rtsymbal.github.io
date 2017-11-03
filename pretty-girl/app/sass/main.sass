@@ -307,6 +307,7 @@ html.mm-opened
 	 	opacity: .9
 	.phone-h
 		font-family: firasans, sans-serif
+		margin-left: 6px
 
 $colors: $blue, $green, $accent
 @for $i from 1 through length($colors)
@@ -367,7 +368,7 @@ $colors: $blue, $green, $accent
 		list-style-type: none
 		margin-bottom: 25px
 		li
-			padding: 9px
+			padding: 9px 0
 			border-bottom: 1px solid rgba($white, .2)
 			&:last-child
 				border-bottom: none
@@ -750,7 +751,28 @@ input, textarea, select,
 	&:hover
 	 opacity: 1
 
-
+.top
+	position: fixed
+	bottom: 25px
+	right: -100px
+	background-color: #e0e0e0
+	z-index: 13
+	border-radius: 10em
+	color: #555
+	font-size: 26px
+	width: 50px
+	height: 50px
+	text-align: center
+	line-height: 50px
+	cursor: 
+	transition: all .3s ease
+	opacity: .5
+	&:hover
+		color: $white
+		background-color: $accent
+		opacity: 1
+	&.active
+		right: 25px
 
 
 
