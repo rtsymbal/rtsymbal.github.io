@@ -43,6 +43,7 @@ body
 	position: relative
 	line-height: 1.65
 	font-family: $default-font
+	text-transform: uppercase
 	overflow-x: hidden
 	opacity: 1
 	&.ishome
@@ -60,5 +61,29 @@ header, section
 	display: block
 	max-width: 100%
 	height: auto
+
+.top-line
+	min-height: 97px
+	width: 100%
+	background-color: rgba(#000, .5)
+	position: absolute
+	top: 0
+	box-shadow: rgba(#fff, .15) 0 0 0 1px
+	padding-top: 23px
+	.top-addr
+		background-image: url(../../img/marker.png)
+		background-repeat: no-repeat
+		padding-left: 50px
+		strong
+			display: block
+			color: $accent
+
+
+	
+		
+
+
+
+
 
 @import "media" // Всегда в конце
