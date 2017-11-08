@@ -1,6 +1,7 @@
 @import "fonts"
 @import "libs"
 @import "vars"
+@import "gists"
 
 *
 	-webkit-box-sizing: border-box
@@ -56,6 +57,7 @@ header, section
 	position: relative
 	background-size: cover
 	background-position: center
+	font-family: $header-font
 
 .img-responsive
 	display: block
@@ -69,14 +71,32 @@ header, section
 	position: absolute
 	top: 0
 	box-shadow: rgba(#fff, .15) 0 0 0 1px
-	padding-top: 23px
+	padding-top: 21px
 	.top-addr
 		background-image: url(../../img/marker.png)
+		background-position: left center
 		background-repeat: no-repeat
 		padding-left: 50px
+		line-height: 1.1
 		strong
 			display: block
 			color: $accent
+			font-size: 31px
+			font-weight: bold
+		a
+			@extend %top-links
+
+	.logo
+		position: absolute
+		margin: -18px
+
+	.right 
+		background-image: none
+		padding-left: 0
+		text-align: right
+
+
+
 
 
 	
