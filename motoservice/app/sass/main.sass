@@ -177,6 +177,7 @@ header, section
 		text-decoration: none	
 		&.active
 			color: $accent
+
 	li
 		float: left
 		border-left: #383838 1px solid
@@ -185,6 +186,12 @@ header, section
 			border-right: #383838 1px solid
 		&:hover
 			background-color: #050505
+		&:nth-child(1) a:before
+			font-family: fontawesome
+			content: '\f005'
+			font-size: 16px
+			color: #fff
+			margin-right: 10px
 
 .warranty	
 	color: #fff
@@ -192,11 +199,23 @@ header, section
 	cursor: default
 	border: 3px solid #fff
 	border-radius: 3px 
-	padding: 3px 5px
-
-	.w-left
+	padding: 2px 7px
+	margin-top: 7px
+	&-left
 		font-weight: bold
-		font-size: 20px
+		font-size: 23px
+		margin-right: 7px
+		color: $accent
+		span
+			font-size: 37px
+			font-weight: bold
+	&-right
+		font-size: 18px
+		margin-top: 3px
+	&-left, &-right
+		display: inline-block
+		line-height: 20px
+
 
 
 
