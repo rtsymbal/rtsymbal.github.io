@@ -57,7 +57,7 @@ header, section
 	position: relative
 	background-size: cover
 	background-position: center
-	font-family: $header-font
+	font-family: $default-font
 
 .img-responsive
 	display: block
@@ -67,7 +67,7 @@ header, section
 .top-line
 	min-height: 97px
 	width: 100%
-	background-color: rgba(#000, .5)
+	background-color: rgba(#242424, .5)
 	box-shadow: rgba(#fff, .15) 0 0 0 1px
 	padding-top: 21px
 	.top-addr
@@ -101,49 +101,105 @@ header, section
 		font-size: 40px
 		font-family: $header-font
 		text-shadow: rgba(#000, .5) 0 1px
+		span 
+			color: $accent
 
-	.button
-		display: inline-block
-		border: none
-		color: #fff
-		text-decoration: none
-		background-color: $accent
-		padding: 15px 45px
-		font-size: 20px
-		text-transform: uppercase
-		font-weight: 600
-		letter-spacing: 3px
-		border-radius: 2px
-		text-align: center
+.buttons-top	
+	position: absolute
+	bottom: 230px
+	width: 100%
+
+.button
+	display: inline-block
+	border: none
+	color: #fff
+	text-decoration: none
+	background-color: $accent
+	padding: 15px 45px
+	font-size: 26px
+	text-transform: uppercase
+	letter-spacing: 1px
+	border-radius: 2px
+	text-align: left
+	position: absolute
+	outline: none
+	transition: background-color .3s ease
+	cursor: pointer
+	margin-right: 40px
+	&::after
+		transition: background-color .2s ease
 		position: absolute
-		bottom: 70px
-		outline: none
-		transition: background-color .3s ease
-		cursor: pointer
-		margin-right: 40px
+		content: ''
+		height: 4px
+		bottom: 0
+		width: 100%
+		background-color: darken($accent, 50%)
+		opacity: .18
+		border-bottom-left-radius: 2px
+		border-bottom-right-radius: 2px
+		left: 0
+	&:focus, &:hover
+		text-decoration: none
+		color: #fff
+	&:hover
+		background-color: lighten($accent, 5%)
 		&::after
-			transition: background-color .2s ease
-			position: absolute
-			content: ''
-			height: 4px
-			bottom: 0
-			width: 100%
-			background-color: darken($accent, 50%)
-			opacity: .18
-			border-bottom-left-radius: 2px
-			border-bottom-right-radius: 2px
-			left: 0
-		&:focus, &:hover
-			text-decoration: none
-			color: #fff
+			opacity: .22
+	&:active
+		background-color: darken($accent, 5%)
+		&::after
+			opacity: .32
+.fb
+	background-image: url(../../img/camera.png)
+	background-repeat: no-repeat
+	background-position: 13px center
+	padding: 
+		left: 70px
+		right: 25px
+
+.top-menu
+	height: 72px
+	width: 100%
+	position: absolute
+	bottom: 0
+	background-color: #242424
+	box-shadow: rgba(#fff, .15) 0 0 0 1px
+	ul
+		padding-left: 15px 
+		margin: 0
+		list-style-type: none
+	a
+		color: #fff
+		font-size: 20px
+		padding: 0 45px
+		display: block
+		line-height: 72px
+		text-decoration: none	
+		&.active
+			color: $accent
+	li
+		float: left
+		border-left: #383838 1px solid
+		transition: all .25s ease
+		&:last-child
+			border-right: #383838 1px solid
 		&:hover
-			background-color: lighten($accent, 5%)
-			&::after
-				opacity: .22
-		&:active
-			background-color: darken($accent, 5%)
-			&::after
-				opacity: .32
+			background-color: #050505
+
+.warranty	
+	color: #fff
+	float: right
+	cursor: default
+	border: 3px solid #fff
+	border-radius: 3px 
+	padding: 3px 5px
+
+	.w-left
+		font-weight: bold
+		font-size: 20px
+
+
+
 
 
 
