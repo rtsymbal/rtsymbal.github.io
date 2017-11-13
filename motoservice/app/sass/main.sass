@@ -106,7 +106,7 @@ header, section
 
 .buttons-top	
 	position: absolute
-	bottom: 230px
+	bottom: 200px
 	width: 100%
 
 .button
@@ -169,14 +169,16 @@ header, section
 		margin: 0
 		list-style-type: none
 	a
-		color: #fff
+		color: #c9c9c9
 		font-size: 20px
-		padding: 0 45px
+		padding: 0 35px
 		display: block
 		line-height: 72px
 		text-decoration: none	
 		&.active
 			color: $accent
+			&:before
+				color: $accent
 
 	li
 		float: left
@@ -186,12 +188,26 @@ header, section
 			border-right: #383838 1px solid
 		&:hover
 			background-color: #050505
-		&:nth-child(1) a:before
+		a:before	
 			font-family: fontawesome
-			content: '\f005'
-			font-size: 16px
-			color: #fff
-			margin-right: 10px
+			font-size: 20px
+			color: #c9c9c9
+			margin:
+				right: 10px
+				bottom: 10px
+		&:nth-child(1) a:before
+			content: '\f015'
+		&:nth-child(2) a:before
+			content: '\f007' 
+		&:nth-child(3) a:before
+			content: '\f155' 
+		&:nth-child(4) a:before
+			content: '\f21c' 
+		&:nth-child(5) a:before
+			content: '\f2b5'
+		&:nth-child(6) a:before
+			content: '\f041' 
+
 
 .warranty	
 	color: #fff
@@ -215,6 +231,65 @@ header, section
 	&-left, &-right
 		display: inline-block
 		line-height: 20px
+
+.main-content-black
+	background-color: #191919
+	h2
+		text-align: center
+		color: #c9c9c9
+		padding: 20px 0 30px
+		font-size: 40px
+		position: relative
+		span
+			color: $accent
+		&::before, &::after
+			font-family: fontawesome
+			font-size: 18px
+			top: 38px
+			position: absolute
+		&::before
+			margin-left: -25px
+			content: '\f053'
+		&::after
+			margin-left: 12px
+			content: '\f054'
+.category-wrap
+	margin: 0
+	padding: 0
+
+.category-items-wrap
+	border: 1px solid #353535 
+	border-radius: 2px
+	width: 158px
+	display: inline-block
+	margin-left: 29px
+	&:hover, &.active
+		background-color: #2a2a2a
+		transition: all .5s ease
+	a
+		color: #fff
+		text-decoration: none
+		img
+			display: block
+			width: 120px
+			height: 85px
+			margin: 10px auto
+		h4
+			text-align: center
+			font-size: 24px
+			margin: .5em
+		.arrow-toggle
+			height: 25px
+			background-color: #212121
+			position: relative
+			font-size: 10px
+			text-align: center
+			line-height: 25px
+			&:hover
+				color: $accent
+
+
+		 
 
 
 
