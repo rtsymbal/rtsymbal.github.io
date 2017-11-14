@@ -1,7 +1,7 @@
 @import "fonts"
 @import "libs"
 @import "vars"
-@import "presets"
+@import "extends"
 
 *
 	-webkit-box-sizing: border-box
@@ -57,7 +57,6 @@ header, section
 	position: relative
 	background-size: cover
 	background-position: center
-	font-family: $default-font
 
 .img-responsive
 	display: block
@@ -96,10 +95,10 @@ header, section
 .site-header
 	h1
 		padding-top: 65px
+		font-family: $default-font
 		text-align: center
 		color: #fff
 		font-size: 40px
-		font-family: $header-font
 		text-shadow: rgba(#000, .5) 0 1px
 		span 
 			color: $accent
@@ -195,18 +194,9 @@ header, section
 			margin:
 				right: 10px
 				bottom: 10px
-		&:nth-child(1) a:before
-			content: '\f015'
-		&:nth-child(2) a:before
-			content: '\f007' 
-		&:nth-child(3) a:before
-			content: '\f155' 
-		&:nth-child(4) a:before
-			content: '\f21c' 
-		&:nth-child(5) a:before
-			content: '\f2b5'
-		&:nth-child(6) a:before
-			content: '\f041' 
+	@each $item, $icon in (1: '\f015', 2: '\f007', 3: '\f155', 4: '\f21c', 5: '\f2b5', 6: '\f041') 
+	  li:nth-child(#{$item}) a:before 
+	    content: '#{$icon}'
 
 
 .warranty	
