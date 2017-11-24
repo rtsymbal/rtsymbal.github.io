@@ -1,5 +1,9 @@
 $(function() {
 
+	// $('.service').click(function(e) {
+	//    e.preventDefault();
+	// });
+
 	// $(".mc_item_wrap ul").each(function() {
 	// 	$(this).after("<div class='mc_item_wrap_af'></div>");
 	// });
