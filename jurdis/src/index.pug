@@ -21,14 +21,10 @@ html(lang="ru")
 			body { opacity: 0; overflow-x: hidden; } 
 			html { background-color: #fff; }
 
-
-
-
 	body.main-page
-		
 		header.main-head
 			nav.top-line
-				.container
+				.container-fluid
 					ul.sf-menu
 						li
 							a(href="#") Главная
@@ -36,7 +32,6 @@ html(lang="ru")
 							a(href="#") О компании
 						li
 							a(href="#") Услуги и стоимость
-								i.fa.fa-sort-desc
 							ul
 								li
 									a(href="#") Подменю
@@ -51,6 +46,41 @@ html(lang="ru")
 						li
 							a(href="#") Контакты
 
+
+			section.top-panel
+				.container
+					.top-panel-content 
+						.row
+							.col-md-2
+								a(href="#").logo
+									img(src="img/logo.png", alt="jurdis").img-responsive
+							.col-md-4
+								.top-panel-box
+									h4 Адреса организации
+									ul
+										li г.Москва, ул. Соколовского, д. 3 офис № 305
+											i.fa.fa-map-marker 
+										li г.Москва, ул. Соколовского, д. 3 офис № 305
+											i.fa.fa-map-marker 
+
+							.col-md-3
+								.top-panel-box
+									h4 Время работы
+									ul
+										li пн-пт с 10-00 до 18-00,<br> перерыв с 13-00 до 14-00<br> сб-вс выходной день.
+											i.fa.fa-clock-o 
+
+							.col-md-3
+								.contacts
+									.top-phone 
+										i.fa.fa-phone
+										<span>8 (800)</span> 111-222-333, 444-555-666
+									.top-email
+										i.fa.fa-envelope
+										<span>E-mail:</span> 
+										a(href="mailto:email.sender@gmail.com") email.sender@gmail.com
+									.top-button
+										a(href="#").button Заказать звонок
 
 
 

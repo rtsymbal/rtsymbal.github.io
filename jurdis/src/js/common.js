@@ -1,5 +1,7 @@
 $(function() {
 
-	$('ul.sf-menu').superfish();
+	$('.top-line .sf-menu').superfish({
+		delay: 200
+	});
 
 });
