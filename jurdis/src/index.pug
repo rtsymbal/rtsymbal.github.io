@@ -23,11 +23,49 @@ html(lang="ru")
 
 	body.main-page
 		header.main-head
-			nav.top-line
-				.container-fluid
+			.carousel-services
+				.slide
+					.slide-bg(style="background-image:url(img/slide-1.jpg)").section-overlay
+					.slide-content
+						.container
+							.row
+								.col-md-5.col-md-offset-1
+									h2 Первая оценочная компания Москвы
+									p  Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Его это злых рыбного взгляд дороге имеет мир от всех, собрал несколько родного!
+									a(href="#").button Список услуг
+								.col-md-5
+									.slide-img-wrap.hidden-sm.hidden-xs
+										img(src="img/slide-img-1.png", alt="alt")
+				.slide
+					.slide-bg(style="background-image:url(img/slide-1.jpg)").section-overlay
+					.slide-content
+						.container
+							.row
+								.col-md-5.col-md-offset-1
+									h2 Первая оценочная компания Москвы
+									p  Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Его это злых рыбного взгляд дороге имеет мир от всех, собрал несколько родного!
+									a(href="#").button Список услуг
+								.col-md-5
+									.slide-img-wrap.hidden-sm.hidden-xs
+										img(src="img/slide-img-1.png", alt="alt")
+				.slide
+					.slide-bg(style="background-image:url(img/slide-1.jpg)").section-overlay
+					.slide-content
+						.container
+							.row
+								.col-md-5.col-md-offset-1
+									h2 Первая оценочная компания Москвы
+									p  Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Его это злых рыбного взгляд дороге имеет мир от всех, собрал несколько родного!
+									a(href="#").button Список услуг
+								.col-md-5
+									.slide-img-wrap.hidden-sm.hidden-xs
+										img(src="img/slide-img-1.png", alt="alt")
+
+			section.inside-slider
+				nav.top-line.hidden-xs
 					ul.sf-menu
 						li
-							a(href="#") Главная
+							a(href="#").active Главная
 						li
 							a(href="#") О компании
 						li
@@ -46,68 +84,45 @@ html(lang="ru")
 						li
 							a(href="#") Контакты
 
-
-			section.top-panel
-				.container
+				.top-panel
 					.top-panel-content 
-						.row
-							.col-md-2
-								a(href="#").logo
-									img(src="img/logo.png", alt="jurdis").img-responsive
-							.col-md-4
-								.top-panel-box
-									h4 Адреса организации
-									ul
-										li г.Москва, ул. Соколовского, д. 3 офис № 305
-											i.fa.fa-map-marker 
-										li г.Москва, ул. Соколовского, д. 3 офис № 305
-											i.fa.fa-map-marker 
-
-							.col-md-3
-								.top-panel-box
-									h4 Время работы
-									ul
-										li пн-пт с 10-00 до 18-00,<br> перерыв с 13-00 до 14-00<br> сб-вс выходной день.
-											i.fa.fa-clock-o 
-
-							.col-md-3
-								.contacts
-									.top-phone 
-										i.fa.fa-phone
-										<span>8 (800)</span> 111-222-333, 444-555-666
-									.top-email
-										i.fa.fa-envelope
-										<span>E-mail:</span> 
-										a(href="mailto:email.sender@gmail.com") email.sender@gmail.com
-									.top-button
-										a(href="#").button Заказать звонок
-
-
-			section.slider
-				.slide
-					.slide-bg(style="background-image:url(img/slide-1.jpg)")
-					.slide-content
 						.container
 							.row
-								.col-md-5.col-md-offset-1
-									h2 Первая оценочная компания Москвы
-									p  Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Его это злых рыбного взгляд дороге имеет мир от всех, собрал несколько родного!
-									a(href="#").button Список услуг
-								.col-md-5
-									.slide-img-wrap
-										img(src="img/slide-img-1.png", alt="alt").img-responsive
-				.slide
-					.slide-bg(style="background-image:url(img/slide-1.jpg)")
-					.slide-content
-						.container
-							.row
-								.col-md-5.col-md-offset-1
-									h2 Первая оценочная компания Москвы
-									p  Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Его это злых рыбного взгляд дороге имеет мир от всех, собрал несколько родного!
-									a(href="#").button Список услуг
-								.col-md-5
-									.slide-img-wrap
-										img(src="img/slide-img-1.png", alt="alt").img-responsive
+								.col-md-2.col-sm-6.col-xs-6
+									a(href="#").logo
+										img(src="img/logo.png", alt="jurdis").img-responsive
+								.col-md-4.hidden-sm.hidden-xs
+									.top-panel-box
+										h4 Адреса организации
+										ul
+											li г.Москва, ул. Соколовского, д. 3 офис № 305
+												i.fa.fa-map-marker 
+											li г.Москва, ул. Соколовского, д. 3 офис № 305
+												i.fa.fa-map-marker 
+
+								.col-md-3.hidden-sm.hidden-xs
+									.top-panel-box
+										h4 Время работы
+										ul
+											li пн-пт с 10-00 до 18-00,<br> перерыв с 13-00 до 14-00<br> сб-вс выходной день.
+												i.fa.fa-clock-o 
+
+								.col-md-3.col-sm-6.col-xs-6
+									.contacts
+										.top-phone 
+											i.fa.fa-phone
+											<span>8 (800)</span> 111-222-333, 444-555-666
+										.top-email
+											i.fa.fa-envelope
+											<span>E-mail:</span> 
+											a(href="mailto:email.sender@gmail.com") email.sender@gmail.com
+										.top-button
+											a(href="#").button Заказать звонок
+
+
+			
+
+
 		link(rel="stylesheet" href="css/main.min.css")
 		script(src="js/scripts.min.js")
 

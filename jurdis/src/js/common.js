@@ -5,7 +5,7 @@ $(function() {
 	});
 
 
-	var owl = $(".slider");
+	var owl = $(".carousel-services");
 	owl.owlCarousel({
 		loop: true,
 		items: 1,

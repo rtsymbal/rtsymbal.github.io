@@ -8,136 +8,41 @@
 // @import "module/list"
 // @import "module/tables"
 
-.top-line
-	background-color: $primary
-	text-align: center
-	border-bottom: lighten($primary, 5%) 1px solid
-	position: relative
-	z-index: 2
-	a
-		color: #fff
-	ul, li
-		list-style-type: none
-		padding: 0
-		margin: 0
-	.sf-menu
-		margin: 0 auto -6px
-		display: inline-block
-		float: none
-		font-family: 'roboto-condensed', sans-serif
-		font-size: em(15px)
-		ul
-			background-color: $primary 
-		li
-			background-color: transparent
-
-			&:hover
-				background-color: darken($primary, 3%)				
-			a
-				border: none
-				padding: 25px 28px
-				&:hover
-					color: $accent	
-			li
-				a
-					padding: 10px
-
-.sf-arrows .sf-with-ul:after
-	margin-top: 0
-
-.top-panel
-	background-color: rgba(lighten($primary, 2%), .8)
-	color: #fff
-	position: relative
-	padding: 50px
-	z-index: 1
-	box-shadow: rgba(255, 255, 255, .03) 0 5px 0 5px
-	img
-		margin-top: 6px
-	&-content
-		position: relative
-		z-index: 1
-	&::before
-		content: ''
-		position: absolute
-		top: 0
-		bottom: 0
-		right: 0
-		left: 0
-		background-image: url(../../img/top-pannel-bg.jpg)
-		opacity: .16
-	&-box
-		h4
-			font-family: 'roboto-condensed', sans-serif
-			font-size: em(15px)
-			position: relative
-			margin: 0
-			&::after
-				content: ''
-				height: 1px
-				width: 100%
-				background-color: $accent
-				position: absolute
-				left: 0
-				bottom: -5px
-				opacity: .4
-		ul, li
-			padding: 0
-			margin: 0
-			margin-top: 5px
-			list-style-type: none
-		li
-			max-width: 48%
-			display: inline-block
-			opacity: .35
-			font-size: em(13px)
-			padding: 0 10px 0 30px
-			position: relative
-			&:only-child
-				max-width: 100%
-			.fa
-				font-size: 16px
-				position: absolute
-				left: 0
-				top: 6px
-
-.contacts
-	text-align: right
-	.top-phone
-		font-size: em(18px)
-		font-family: 'roboto-condensed', sans-serif
-		margin-top: -3px
-		span
-			font-size: em(12px)
-			opacity: .3
-	.fa
-		margin-right: 10px
-	.top-email
-		font-size: em(14px)
-		margin-bottom: 10px
-		span
-			opacity: .3
-		a
-			color: #fff
-			text-decoration: underline
-	.button
-		color: #222
-		padding: 10px 22px
-		letter-spacing: 2px
-
-.slider
-	position: absolute
-	top: 0
+.main-head
 	width: 100%
-	// .slide-content
-	// 	float: left
+	.owl-dots
+		position: relative
+		bottom: 80px
+		width: 100%
+		text-align: center
+		.owl-dot
+			display: inline-block
+			margin: 0 3px
+			width: 14px
+			height: 14px
+			background-color: darken($primary, 10%)
+			border-radius: 10em 
+			cursor: pointer
+			transition: background-color .25s ease
+			&.active
+				background-color: $accent
 	.slide-wrap
 		display: inline-block
+		&.active
+			h2
+				opacity: 1
+				left: 0
+			p
+				opacity: .75
+				left: 0
+			.slide-img-wrap
+				opacity: 1
+				transform: scale(1)
+.carousel-services
 	.slide
 		color: #fff
 		padding-top: 300px
-		padding-bottom: 50px
-		margin: 25px 0
+		padding-bottom: 100px
 		position: relative
 		h2
 			font-family: "roboto-condensed", sans-serif
@@ -145,12 +50,20 @@
 			font-size: em(48px)
 			margin: 0
 			line-height: em(19px)
+			position: relative
+			left: 100px
+			opacity: 0
+			transition: all 1s ease
 			&:first-line
 				color: $accent
 		p
 			font-family: "roboto-rt", sans-serif
 			font-weight: 300
-			opacity: .75
+			position: relative
+			left: 50px
+			opacity: 0
+			transition: all 1.5s ease
+			transition-delay: .25s
 		.button
 			color: #222
 		&-bg
@@ -160,37 +73,154 @@
 			left: 0
 			right: 0
 			bottom: 0
-			&::before
-				content: ''
-				background-color: $primary
-				top: 0
-				left: 0
-				width: 100%
-				height: 100%
-				position: absolute
-				opacity: .85
 		&-content
 			position: relative
 			.slide-img-wrap
-				padding: em(40px 0)
-.owl-nav
-	position: absolute
-	top: 430px
-	width: 100%
-	z-index: 3
-	> div
-		width: 64px
-		height: 64px
-		background-color: #fff
-		color: #000
+				padding-top: 15px
+				opacity: 0
+				transform: scale(.5)
+				transition: all .5s ease
+				img
+					width: 100%
+	.owl-nav
 		position: absolute
+		top: 430px
+		width: 100%
+		z-index: 3
+		>div
+			color: #fff
+			position: absolute
+			font-size: 46px
+			cursor: pointer
+			&.owl-prev
+				left: 400px
+			&.owl-next
+				right: 400px
+
+.inside-slider
+	position: absolute
+	width: 100%
+	top: 0
+	.top-line
+		position: relative
+		background-color: $primary
 		text-align: center
-		line-height: 64px
-		font-size: 26px
-		&.owl-prev
-			left: 400px
-		&.owl-next
-			right: 400px
+		border-bottom: lighten($primary, 5%) 1px solid
+		z-index: 1
+		a
+			color: #fff
+		ul, li
+			list-style-type: none
+			padding: 0
+			margin: 0
+		.sf-menu
+			margin: 0 auto -6px
+			display: inline-block
+			float: none
+			font-family: 'roboto-condensed', sans-serif
+			font-size: em(15px)
+			ul
+				background-color: $primary 
+			li
+				background-color: transparent
+				.active
+					background-color: darken($primary, 3%)
+					color: $accent
+				&:hover
+					background-color: darken($primary, 3%)				
+				a
+					border: none
+					padding: 25px 28px
+					&:hover
+						color: $accent	
+				li
+					a
+						padding: 10px
+
+
+	.top-panel
+		background-color: rgba(lighten($primary, 2%), .8)
+		color: #fff
+		// position: absolute
+		// top: 0
+		// width: 100%
+		padding: 50px 0
+		box-shadow: rgba(255, 255, 255, .03) 0 5px 0 5px
+		img
+			margin-top: 6px
+		&-content
+			position: relative
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			bottom: 0
+			right: 0
+			left: 0
+			background-image: url(../../img/top-pannel-bg.jpg)
+			opacity: .16
+		&-box
+			h4
+				font-family: 'roboto-condensed', sans-serif
+				font-size: em(15px)
+				position: relative
+				margin: 0
+				&::after
+					content: ''
+					height: 1px
+					width: 100%
+					background-color: $accent
+					position: absolute
+					left: 0
+					bottom: -5px
+					opacity: .4
+			ul, li
+				padding: 0
+				margin: 0
+				margin-top: 5px
+				list-style-type: none
+			li
+				max-width: 48%
+				display: inline-block
+				opacity: .35
+				font-size: em(13px)
+				padding: 0 10px 0 30px
+				position: relative
+				&:only-child
+					max-width: 100%
+				.fa
+					font-size: 16px
+					position: absolute
+					left: 0
+					top: 6px
+
+	.contacts
+		text-align: right
+		.top-phone
+			font-size: em(18px)
+			font-family: 'roboto-condensed', sans-serif
+			margin-top: -3px
+			span
+				font-size: em(12px)
+				opacity: .3
+		.fa
+			margin-right: 10px
+		.top-email
+			margin-bottom: 10px
+			span
+				opacity: .3
+			a
+				color: #fff
+				text-decoration: underline
+				font-size: em(14px)
+		.button
+			color: #222
+			padding: 10px 22px
+			letter-spacing: 2px
+
+
+	.sf-arrows .sf-with-ul:after
+		margin-top: 0
 
 
 @import "base/media" // always at the end
