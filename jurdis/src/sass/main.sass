@@ -41,7 +41,7 @@
 .carousel-services
 	.slide
 		color: #fff
-		padding-top: 300px
+		padding-top: 350px
 		padding-bottom: 100px
 		position: relative
 		h2
@@ -82,20 +82,14 @@
 				transition: all .5s ease
 				img
 					width: 100%
-	.owl-nav
-		position: absolute
-		top: 430px
-		width: 100%
-		z-index: 3
-		>div
-			color: #fff
-			position: absolute
-			font-size: 46px
-			cursor: pointer
-			&.owl-prev
-				left: 400px
-			&.owl-next
-				right: 400px
+
+.owl-prev, .owl-next
+	position: absolute
+	font-size: em(46px)
+	cursor: pointer
+	top: 100px
+.owl-next
+	right: 0
 
 .inside-slider
 	position: absolute

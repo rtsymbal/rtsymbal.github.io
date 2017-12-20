@@ -8,10 +8,12 @@ $(function() {
 	var owl = $(".carousel-services");
 	owl.owlCarousel({
 		loop: true,
+		center: true,
+		navContainer: ".slide-content",
 		items: 1,
 		itemClass: "slide-wrap",
 		nav: true,
-		smartspeed: 700,
+		navSpeed: 700,
 		navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
 
 	});
