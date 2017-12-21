@@ -28,7 +28,7 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	.owl-nav
+	.owl-prev, .owl-next
 		.fa
 			display: none
 	.top-panel
@@ -42,7 +42,7 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	.owl-nav
+	.owl-prev, .owl-next
 		.fa
 			display: none
 	.top-line
@@ -50,20 +50,35 @@
 			li
 				a
 					padding: 20px 20px
+	.carousel-services
+		.slide
+			padding-top: 250px
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	.owl-nav
+	.owl-prev, .owl-next
 		.fa
 			display: none
 	.top-panel
 		background-color: transparent
+	.carousel-services
+		.slide
+			h2
+				font-size: 30px
+			p
+				font-size: 14px
+			.button
+				letter-spacing: 1px
+	.inside-slider
+		.contacts
+			.button
+				letter-spacing: 0
 
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
-	.owl-nav
+	.owl-prev, .owl-next
 		.fa
 			display: none
 
