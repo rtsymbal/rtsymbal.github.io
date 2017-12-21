@@ -31,6 +31,7 @@ gulp.task('js', ['common-js'], function() {
 		'src/libs/jquery/dist/jquery.min.js',
 		'src/libs/superfish/dist/js/superfish.min.js',
 		'src/libs/owl.carousel/dist/owl.carousel.min.js',
+		'src/libs/jQuery.mmenu/dist/jquery.mmenu.all.js',
 		'src/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
@@ -69,7 +70,7 @@ gulp.task('sass', function() {
 
 gulp.task('watch', ['pug', 'sass', 'js', 'browser-sync'], function() {
 	gulp.watch('src/**/*.pug', ['pug']);
-	gulp.watch('src/sass/**/*.sass', ['sass']);
+	gulp.watch('src/sass/**/**/*', ['sass']);
 	gulp.watch(['libs/**/*.js', 'src/js/common.js'], ['js']);
 	gulp.watch('src/*.html', browserSync.reload);
 });
