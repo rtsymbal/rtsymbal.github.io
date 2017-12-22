@@ -217,10 +217,28 @@
 
 .hamburger
 	position: absolute
-	z-index: 2
+	z-index: 11
 	outline: none
 
 
+#my-menu
+	position: absolute
+	z-index: 10
+	top: 0
+	background-color: $primary
+	color: #fff
+	text-align: center
 
+	.mm-navbar
+		border: none
+
+		a
+			padding: 20px
+			color: #fff
+			font-size: 20px
+
+	.mm-listview
+		margin-top: 20px
+		font-size: 15px
 
 @import "base/media" // always at the end

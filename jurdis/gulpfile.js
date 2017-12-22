@@ -32,6 +32,7 @@ gulp.task('js', ['common-js'], function() {
 		'src/libs/superfish/dist/js/superfish.min.js',
 		'src/libs/owl.carousel/dist/owl.carousel.min.js',
 		'src/libs/jQuery.mmenu/dist/jquery.mmenu.all.js',
+		'src/libs/jQuery.mmenu/dist/wrappers/bootstrap/jquery.mmenu.bootstrap.js',
 		'src/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))

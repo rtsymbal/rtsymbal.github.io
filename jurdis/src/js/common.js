@@ -19,7 +19,19 @@ $(function() {
 
 
 	var $menu = $("#my-menu").mmenu({
-	   extensions: [ 'theme-black', 'fx-menu-slide', 'pagedim-black' ],
+	  extensions: ["fx-menu-slide", "fx-panels-slide-up", "fx-listitems-drop", "fullscreen", "listview-huge", "pagedim-black"], 
+
+	  "autoHeight": true,
+
+	  "offCanvas": {
+            "position": "right"
+     },
+	  navbar : {
+			title: 'Меню сайта:'
+		},
+
+		clone: true,
+
 	});
 	var $icon = $(".hamburger");
 	var API = $menu.data( "mmenu" );

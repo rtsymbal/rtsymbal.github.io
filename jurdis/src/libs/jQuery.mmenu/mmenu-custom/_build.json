@@ -1,0 +1,9 @@
+{
+   "name"   : "dist/jquery.mmenu.custom",
+   "umd"	: true,
+   "files"	: {
+      "core"      : [ "oncanvas", "offcanvas", "scrollbugfix", "screenreader" ],
+      "addons"    : [ "navbars", "searchfield" ],
+      "extensions": [ "themes" ]
+   }
+}

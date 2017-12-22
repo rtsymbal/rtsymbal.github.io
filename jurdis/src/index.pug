@@ -22,24 +22,22 @@ html(lang="ru")
 			html { background-color: #fff; }
 
 	body.main-page
-		#my-page
-			#my-header
-				nav#my-menu
-					ul
-						li
-							a(href="#") Главная
-						li
-							a(href="#") О компании
-						li
-							a(href="#") Услуги и стоимость
-						li
-							a(href="#") Сертификаты
-						li
-							a(href="#") Статьи
-						li
-							a(href="#") Контакты
-			#my-content
-			#my-footer
+
+		nav#my-menu.hidden-lg.hidden-md.hidden-sm
+			ul
+				li
+					a(href="#") Главная
+				li
+					a(href="#") О компании
+				li
+					a(href="#") Услуги и стоимость
+				li
+					a(href="#") Сертификаты
+				li
+					a(href="#") Статьи
+				li
+					a(href="#") Контакты
+
 		header.main-head
 			.carousel-services
 				.slide
@@ -82,7 +80,7 @@ html(lang="ru")
 
 			section.inside-slider
 
-				button.hamburger(type="button").hamburger--elastic
+				button.hamburger(type="button").hamburger--elastic.hidden-lg.hidden-md.hidden-sm
 					span.hamburger-box
 						span.hamburger-inner
 
