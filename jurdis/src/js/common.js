@@ -17,6 +17,11 @@ $(function() {
 		navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
 	});
 
+	// $(".sf-menu").after("<div id = 'my-menu'>");
+	$(".sf-menu").clone().removeClass("sf-menu").appendTo("#my-menu");
+	// $("#my-menu").find("*").atrr("style", "");
+	// $("#my-menu").find("ul").removeClass("sf-menu");
+
 
 	var $menu = $("#my-menu").mmenu({
 	  extensions: ["fx-menu-slide", "fx-panels-slide-up", "fx-listitems-drop", "fullscreen", "listview-huge", "pagedim-black"], 

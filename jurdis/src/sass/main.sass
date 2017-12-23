@@ -227,7 +227,6 @@
 	top: 0
 	background-color: $primary
 	color: #fff
-	text-align: center
 
 	.mm-navbar
 		border: none
@@ -240,5 +239,63 @@
 	.mm-listview
 		margin-top: 20px
 		font-size: 15px
+
+.sect-teaser
+	background-color: $primary
+	color: #fff
+	margin-top: -33px
+	padding: 28px
+	.teaser-item
+		cursor: default
+		padding: 20px 0
+		.teaser-count
+			position: relative
+			width: 43px
+			&::before
+				position: absolute
+				font-family: fontawesome
+				content: '\f005'
+				font-size: em(48px)
+				line-height: 1
+				color: lighten($primary, 10%)	
+			span
+				position: absolute
+				width: 100%
+				text-align: center
+				line-height: 48px
+
+				color: $accent
+				font-family: "roboto-condensed", sans-serif
+				font-weight: bold
+				font-size: em(22px)
+		.teaser-text 
+			padding-left: 60px
+			p
+				margin: 0
+				opacity: .5
+
+
+
+
+		// &-count
+		// 	width: 43px
+		// 	height: 43px
+		// 	position: relative
+		// 	.fa
+		// 		font-size: 48px
+		// 		color: lighten($primary, 10%)	
+		// 	span
+		// 		position: absolute
+		// 		text-align: center
+		// 		width: 100%
+		// 		top: 0
+		// 		line-height: 43px
+		// 		font-family: "roboto-condensed", sans-serif
+		// 		font-weight: bold
+		// 		font-size: 22px
+		// 		color: $accent
+		// &-text
+
+
 
 @import "base/media" // always at the end
