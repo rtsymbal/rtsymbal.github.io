@@ -257,6 +257,9 @@
 				content: '\f005'
 				font-size: em(48px)
 				line-height: 1
+				font-style: normal
+    		font-weight: normal
+    		text-decoration: inherit
 				color: lighten($primary, 10%)	
 			span
 				position: absolute
@@ -275,26 +278,82 @@
 				opacity: .5
 
 
+.sect-services
+	background-color: #efefef
+	.col-md-3
+		padding: 0
 
+.service-item
+	border: 5px lighten($primary, 6%) solid
+	transition: all .5s ease
+	text-align: center
+	padding-bottom: 32px
+	background-color: #fff
+	z-index: 2
+	h4
+		font-size: em(18px)
+		margin-bottom: 15px
+	.service-stars
+		font-size: em(11px)
+		color: #b4b4b4
+		.fa
+			margin-left: 1px
+			transition: all .5s ease
+	.service-price
+		font-size: em(17px)
+		font-family: "roboto-rt", sans-serif
+		font-weight: bold
+		margin-top: 5px
+		.fa
+			color: $accent
+			font-size: 18px
+		span
+			span
+				font-size: em(28px)
+	.button
+			color: #222
+			padding: 10px 22px
+			letter-spacing: 2px
+			margin-top: 15px
+	&:hover
+		transform: scale(1.05)
+		border-color: $accent
+		box-shadow: rgba(0, 0, 0, .35) 0 0 32px
+		.service-item-image
+			.fa
+				opacity: .4
+			&::before
+				opacity: .7
+		.service-stars
+			.fa
+				margin: 0 3px
+				color: $accent
 
-		// &-count
-		// 	width: 43px
-		// 	height: 43px
-		// 	position: relative
-		// 	.fa
-		// 		font-size: 48px
-		// 		color: lighten($primary, 10%)	
-		// 	span
-		// 		position: absolute
-		// 		text-align: center
-		// 		width: 100%
-		// 		top: 0
-		// 		line-height: 43px
-		// 		font-family: "roboto-condensed", sans-serif
-		// 		font-weight: bold
-		// 		font-size: 22px
-		// 		color: $accent
-		// &-text
+	&-image
+		min-height: 190px
+		background-size: cover
+		position: relative
+		.fa
+			font-size: 30px
+			color: #fff
+			position: absolute
+			top: 50%
+			left: 50%
+			margin-left: -10px
+			margin-top: -10px
+			opacity: 0
+			transition: all .5s ease
+		&::before
+			position: absolute
+			content: ''
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			background-color: $primary
+			opacity: 0
+			transition: all .5s ease
+
 
 
 
