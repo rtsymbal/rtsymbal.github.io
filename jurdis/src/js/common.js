@@ -58,6 +58,7 @@ $(function() {
 
 
 	$('.service-item h4').equalHeights();
+	$('.link-item').equalHeights();
 
 
 });

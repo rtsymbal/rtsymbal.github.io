@@ -354,6 +354,99 @@
 			opacity: 0
 			transition: all .5s ease
 
+.news, .links
+	background-size: cover
+	padding: 60px 0
+	position: relative
+	.links
+	background-color: #efefef
+	.news-name, .links-name
+		color: #fff
+		h2
+			font-family: "roboto-condensed", sans-serif
+			font-weight: bold
+			font-size: 42px
+			line-height: 1
+		.button
+			color: #222
+			letter-spacing: 1px
+			font-size: 17px
+			padding: 10px 22px
+			margin-bottom: 20px
+	.links-name
+		color: #222
+	.news-item
+		border: 1px #fff solid
+		transition: all .5s ease
+		text-align: center
+		padding-bottom: 32px
+		background-color: #fff
+		color: #111
+		line-height: normal
+		.news-item-image
+			min-height: 190px
+			background-size: cover
+			position: relative
+			.fa
+				font-size: 30px
+				color: #fff
+				position: absolute
+				top: 50%
+				left: 50%
+				margin-left: -10px
+				margin-top: -10px
+				opacity: 0
+				transition: all .5s ease
+			&::before
+				position: absolute
+				content: ''
+				width: 100%
+				height: 100%
+				top: 0
+				left: 0
+				background-color: $primary
+				opacity: 0
+				transition: all .5s ease
+			&:hover
+				.fa
+					opacity: .4
+				&::before
+					opacity: .7
+
+		h4
+			font-size: em(17px)
+			margin-bottom: 1px
+			padding: 0 20px
+			font-family: "roboto-condensed", sans-serif
+		p
+			font-size: em(14px)
+			padding: 0 20px
+			margin: 7px
+		.button
+			color: #222
+			padding: 10px 22px
+			letter-spacing: 2px
+			margin-top: 15px
+
+.links
+	.link-item
+		display: block
+		padding: 10px
+		border: $accent 4px solid
+		background-color: #fff
+		background-image: url(../img/rus.svg)
+		background-position: 5% 50%
+		background-repeat: no-repeat
+		background-size: 40px auto
+		padding-left: 75px
+		color: #222
+		text-transform: uppercase
+		font-family: "roboto-condensed", sans-serif
+		font-weight: bold
+		line-height: normal
+		margin: 20px 0
+
+
 
 
 
