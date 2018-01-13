@@ -481,25 +481,94 @@ a {
   src: url("../fonts/RobotoLight/RobotoLight.eot");
   src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoLight/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight/RobotoLight.woff2") format("woff2"), url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype"), url("../fonts/RobotoLight/RobotoLight.svg#roboto-rt") format("svg"); }
 
-.rt-top-line__container {
+@font-face {
+  font-family: "acrobat";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/AcrobatBold/Akrobat-Bold.eot");
+  src: url("../fonts/AcrobatBold/Akrobat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/AcrobatBold/Akrobat-Bold.woff") format("woff"), url("../fonts/AcrobatBold/Akrobat-Bold.woff2") format("woff2"), url("../fonts/AcrobatBold/Akrobat-Bold.ttf") format("truetype"), url("../fonts/AcrobatBold/Akrobat-Bold.svg#acrobat") format("svg"); }
+
+@font-face {
+  font-family: "acrobat";
+  font-weight: 900;
+  font-style: normal;
+  src: url("../fonts/AcrobatBold/Akrobat-Black.eot");
+  src: url("../fonts/AcrobatBold/Akrobat-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/AcrobatBold/Akrobat-Black.woff") format("woff"), url("../fonts/AcrobatBold/Akrobat-Black.woff2") format("woff2"), url("../fonts/AcrobatBold/Akrobat-Black.ttf") format("truetype"), url("../fonts/AcrobatBold/Akrobat-Black.svg#acrobat") format("svg"); }
+
+@font-face {
+  font-family: "fontawesome";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/font-awesome/fontawesome-webfont.eot");
+  src: url("../fonts/font-awesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/font-awesome/fontawesome-webfont.woff") format("woff"), url("../fonts/font-awesome/fontawesome-webfont.woff2") format("woff2"), url("../fonts/font-awesome/fontawesome-webfont.ttf") format("truetype"), url("../fonts/font-awesome/fontawesome-webfont.svg#fontawesome") format("svg"); }
+
+.rt-top-line__container, .rt-intro__container {
   margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
   @media (min-width: 320px) {
-    .rt-top-line__container {
+    .rt-top-line__container, .rt-intro__container {
       width: 100%;
       padding: 0 15px; } }
   @media (min-width: 767px) {
-    .rt-top-line__container {
+    .rt-top-line__container, .rt-intro__container {
       width: 750px; } }
   @media (min-width: 1024px) {
-    .rt-top-line__container {
+    .rt-top-line__container, .rt-intro__container {
       width: 970px; } }
   @media (min-width: 1200px) {
-    .rt-top-line__container {
+    .rt-top-line__container, .rt-intro__container {
       width: 1170px; } }
+
+.button {
+  display: inline-block;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  background-color: #F7931E;
+  padding: 15px 45px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
+  -webkit-border-radius: 10em;
+          border-radius: 10em;
+  text-align: center;
+  position: relative;
+  outline: none;
+  -webkit-transition: background-color .3s ease;
+  -o-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+  cursor: pointer; }
+  .button::after {
+    -webkit-transition: background-color .2s ease;
+    -o-transition: background-color .2s ease;
+    transition: background-color .2s ease;
+    position: absolute;
+    content: '';
+    height: 4px;
+    bottom: 0;
+    width: 100%;
+    background-color: #150c01;
+    opacity: .18;
+    -webkit-border-bottom-left-radius: 2px;
+            border-bottom-left-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+    left: 0; }
+  .button:focus, .button:hover {
+    text-decoration: none;
+    color: #fff; }
+  .button:hover {
+    background-color: #f89f37; }
+    .button:hover::after {
+      opacity: .22; }
+  .button:active {
+    background-color: #f38709; }
+    .button:active::after {
+      opacity: .32; }
 
 .btn {
   display: block;
@@ -511,10 +580,7 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
-  background: -webkit-gradient(linear, right top, left top, from(#fe9a8b), color-stop(41%, #fd868c), color-stop(73%, #f9748f), to(#f78ca0));
-  background: -webkit-linear-gradient(right, #fe9a8b, #fd868c 41%, #f9748f 73%, #f78ca0);
-  background: -o-linear-gradient(right, #fe9a8b, #fd868c 41%, #f9748f 73%, #f78ca0);
-  background: linear-gradient(to left, #fe9a8b, #fd868c 41%, #f9748f 73%, #f78ca0);
+  background: none;
   -webkit-border-radius: 100px;
           border-radius: 100px;
   text-align: center;
@@ -569,8 +635,8 @@ a {
   background-color: #999; }
 
 .rt-top-line {
-  position: relative;
-  top: 0;
+  position: absolute;
+  z-index: 1;
   width: 100%;
   border-bottom: 1px rgba(255, 255, 255, 0.5) solid; }
   .rt-top-line__container {
@@ -637,3 +703,47 @@ a {
 .rt-menu-item {
   display: inline-block;
   padding: 15px; }
+
+.rt-intro {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  position: relative;
+  top: 0;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .rt-intro__container {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .rt-intro__top-title {
+    width: 57.62712%; }
+    .rt-intro__top-title h1 {
+      color: rgba(255, 255, 255, 0.7);
+      font-family: "acrobat";
+      font-size: 40px;
+      font-weight: bold; }
+      .rt-intro__top-title h1 span {
+        font-size: 82px;
+        display: block; }
+    .rt-intro__top-title p {
+      display: block;
+      color: rgba(255, 255, 255, 0.9);
+      line-height: 1.4;
+      padding-right: 70px; }
+      .rt-intro__top-title p::before {
+        content: '\f10d';
+        font-family: fontawesome;
+        display: block;
+        font-size: 20px;
+        color: #F7931E; }
+    .rt-intro__top-title .button {
+      margin-top: 25px; }

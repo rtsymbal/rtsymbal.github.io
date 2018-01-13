@@ -6,8 +6,9 @@
 	background-color: #999
 
 .rt-top-line
-	position: relative
-	top: 0
+	position: absolute
+	top:
+	z-index: 1
 	width: 100%
 	border-bottom: 1px rgba(255, 255, 255, .5) solid
 	&__container
@@ -33,7 +34,6 @@
 	color: #fff
 
 .rt-first-line
-	// border-bottom: 1px rgba(255, 255, 255, .5) solid
 	padding: 10px 0
 
 	&__contacts, &__soc, &__search
@@ -58,3 +58,35 @@
 .rt-menu-item
 	display: inline-block
 	padding: 15px
+
+.rt-intro
+	display: flex
+	height: 100%
+	position: relative
+	top: 0
+	align-items: center
+	&__container
+		+container()
+	&__top-title
+		width: span(first 7)
+		h1
+			color: rgba(255, 255, 255, .7)
+			font-family: "acrobat"
+			font-size: 40px
+			font-weight: bold
+			span
+				font-size: 82px
+				display: block
+		p
+			display: block
+			color: rgba(255, 255, 255, .9)
+			line-height: 1.4
+			padding-right: 70px
+			&::before
+				content: '\f10d'
+				font-family: fontawesome
+				display: block
+				font-size: 20px
+				color: $accent
+		.button
+			margin-top: 25px

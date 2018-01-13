@@ -25,20 +25,23 @@ mixin header(data)
 								i.fa.fa-envelope
 								+e.A(href="mailto:info@letstravel.org?subject=Qastion", target="_blank") info@letstravel.org	
 
-						//- +e.authorize
-						//- 	+e.login
-						//- 		i.fa.fa-user
-						//- 		+e.A(href="##") Login
-						//- 	+e.singup
-						//- 		i.fa.fa-lock
-						//- 		+e.A(href="##") Sing Up
-							
 					+b.second-line
 						+e.NAV.top-menu
 							+b.UL.menu
 								each item in data.menu
 									+b.menu-item
 										+e.A(href=item.hreaf)= item.name
-
+										
+		+b.intro
+			+e.container
+				+e.top-title
+					h1.h1 Open your eyes to
+						span The hidden world
+					p
+						| Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+						| sed do eiusmod tempor incididunt ut labore et dolore magna 
+						| aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+						| ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					a.button(href="##") Learn more
 
 		
