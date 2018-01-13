@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="19px" height="36px" viewBox="0 0 19 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#FE9A8B" offset="0%"></stop>
+            <stop stop-color="#FD868C" offset="40.8502073%"></stop>
+            <stop stop-color="#F9748F" offset="73.1505102%"></stop>
+            <stop stop-color="#F78CA0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Главная" transform="translate(-1485.000000, -5172.000000)" stroke="url(#linearGradient-1)">
+            <g id="Testimonials" transform="translate(375.000000, 4933.000000)">
+                <g id="Arrows" transform="translate(404.000000, 239.000000)">
+                    <path d="M706.50207,17.949578 C706.507602,17.8238529 706.558733,17.7054068 706.649122,17.6150182 L723.615018,0.64912187 C723.812985,0.451155243 724.127887,0.450217247 724.324458,0.646788676 C724.518838,0.841168471 724.518083,1.16027024 724.322125,1.35622865 L708.046284,17.63207 L707.69273,17.9856234 L708.046284,18.3391768 L724.322125,34.6150182 C724.520092,34.8129849 724.52103,35.1278868 724.324458,35.3244582 C724.130078,35.518838 723.810977,35.5180834 723.615018,35.322125 L706.649122,18.3562287 C706.542979,18.2500853 706.490933,18.1078314 706.501278,17.963296 L706.50207,17.949578 Z" id="Combined-Shape" transform="translate(715.485623, 17.984836) rotate(-180.000000) translate(-715.485623, -17.984836) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

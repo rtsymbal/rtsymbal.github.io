@@ -1,0 +1,54 @@
+.rt-header
+	position: relative
+	width: 100%
+	min-height: 700px
+	height: 100vh
+	background-color: #999
+
+.rt-top-line
+	position: relative
+	top: 0
+	width: 100%
+	&__container
+		+container()
+	&__logo
+		width: span(1 at 1)
+		min-width: 150px
+		img
+			display: block
+			width: 100%
+			height: auto
+	&__right-block
+		width: span(3 at 2)
+
+.rt-first-line
+	display: flex
+	flex-direction: row
+	justify-content: flex-end
+	white-space: nowrap
+	color: #fff
+	border-bottom: 1px rgba(255, 255, 255, .5) solid
+	padding: 10px 0
+
+	&__contacts, &__soc, &__authorize
+		float: right
+		margin-left: 30px
+
+	&__soc
+		padding: 0 20px
+		border:
+			left: 1px rgba(255, 255, 255, .5) solid
+			right: 1px rgba(255, 255, 255, .5) solid
+		.fa
+			margin: 0 5px
+
+	&__login, &__singup, &__phone, &__e-mail
+		float: right
+		margin: 0 10px
+		.fa
+			&::before
+				margin-right: 7px
+			span
+				font-family: $main-font
+
+.rt-second-line
