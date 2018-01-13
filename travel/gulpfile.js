@@ -16,7 +16,7 @@ var useref = require('gulp-useref'),
 		rimraf = require('rimraf'),
 		notify = require('gulp-notify'),
 		cache  = require('gulp-cache'),
-		ftp = require('vinyl-ftp');
+		ftp 	 = require('vinyl-ftp');
 
 var paths = {
 			blocks: 'develop/',

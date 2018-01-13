@@ -9,46 +9,52 @@
 	position: relative
 	top: 0
 	width: 100%
+	border-bottom: 1px rgba(255, 255, 255, .5) solid
 	&__container
 		+container()
+
 	&__logo
-		width: span(1 at 1)
+		display: flex
+		align-items: center
+		width: span(first 3)
 		min-width: 150px
 		img
 			display: block
 			width: 100%
 			height: auto
 	&__right-block
-		width: span(3 at 2)
+		width: span(last 9)
 
-.rt-first-line
+.rt-first-line, .rt-second-line
 	display: flex
 	flex-direction: row
 	justify-content: flex-end
 	white-space: nowrap
 	color: #fff
-	border-bottom: 1px rgba(255, 255, 255, .5) solid
+
+.rt-first-line
+	// border-bottom: 1px rgba(255, 255, 255, .5) solid
 	padding: 10px 0
 
-	&__contacts, &__soc, &__authorize
-		float: right
+	&__contacts, &__soc, &__search
 		margin-left: 30px
 
 	&__soc
 		padding: 0 20px
-		border:
-			left: 1px rgba(255, 255, 255, .5) solid
-			right: 1px rgba(255, 255, 255, .5) solid
+		border-right: 1px rgba(255, 255, 255, .5) solid
+		border-left: 1px rgba(255, 255, 255, .5) solid
 		.fa
 			margin: 0 5px
 
-	&__login, &__singup, &__phone, &__e-mail
+	&__phone, &__e-mail
 		float: right
-		margin: 0 10px
+		margin: 0 15px
 		.fa
 			&::before
 				margin-right: 7px
 			span
 				font-family: $main-font
 
-.rt-second-line
+.rt-menu-item
+	display: inline-block
+	padding: 15px

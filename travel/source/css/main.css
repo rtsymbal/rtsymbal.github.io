@@ -571,7 +571,8 @@ a {
 .rt-top-line {
   position: relative;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  border-bottom: 1px rgba(255, 255, 255, 0.5) solid; }
   .rt-top-line__container {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
@@ -581,16 +582,24 @@ a {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
   .rt-top-line__logo {
-    width: 21.05263%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 23.72881%;
     min-width: 150px; }
     .rt-top-line__logo img {
       display: block;
       width: 100%;
       height: auto; }
   .rt-top-line__right-block {
-    width: 73.68421%; }
+    width: 74.57627%; }
 
-.rt-first-line {
+.rt-first-line, .rt-second-line {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -605,22 +614,26 @@ a {
       -ms-flex-pack: end;
           justify-content: flex-end;
   white-space: nowrap;
-  color: #fff;
-  border-bottom: 1px rgba(255, 255, 255, 0.5) solid;
+  color: #fff; }
+
+.rt-first-line {
   padding: 10px 0; }
-  .rt-first-line__contacts, .rt-first-line__soc, .rt-first-line__authorize {
-    float: right;
+  .rt-first-line__contacts, .rt-first-line__soc, .rt-first-line__search {
     margin-left: 30px; }
   .rt-first-line__soc {
     padding: 0 20px;
-    border-left: 1px rgba(255, 255, 255, 0.5) solid;
-    border-right: 1px rgba(255, 255, 255, 0.5) solid; }
+    border-right: 1px rgba(255, 255, 255, 0.5) solid;
+    border-left: 1px rgba(255, 255, 255, 0.5) solid; }
     .rt-first-line__soc .fa {
       margin: 0 5px; }
-  .rt-first-line__login, .rt-first-line__singup, .rt-first-line__phone, .rt-first-line__e-mail {
+  .rt-first-line__phone, .rt-first-line__e-mail {
     float: right;
-    margin: 0 10px; }
-    .rt-first-line__login .fa::before, .rt-first-line__singup .fa::before, .rt-first-line__phone .fa::before, .rt-first-line__e-mail .fa::before {
+    margin: 0 15px; }
+    .rt-first-line__phone .fa::before, .rt-first-line__e-mail .fa::before {
       margin-right: 7px; }
-    .rt-first-line__login .fa span, .rt-first-line__singup .fa span, .rt-first-line__phone .fa span, .rt-first-line__e-mail .fa span {
+    .rt-first-line__phone .fa span, .rt-first-line__e-mail .fa span {
       font-family: "roboto-rt", sans-serif; }
+
+.rt-menu-item {
+  display: inline-block;
+  padding: 15px; }

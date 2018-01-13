@@ -1,4 +1,4 @@
-mixin header()
+mixin header(data)
 	+b.HEADER.header(style="background-image: url(img/top-bg.jpg)")
 		+b.top-line
 			+e.container
@@ -7,14 +7,9 @@ mixin header()
 						img(src="img/logo/logo.svg", alt="logo")
 				+e.right-block
 					+b.first-line
-						+e.contacts
-							+e.phone
-								i.fa.fa-mobile
-								span +48 788 387 555
-							+e.e-mail
-								i.fa.fa-envelope
-								+e.A(href="mailto:info@letstravel.org?subject=Qastion", target="_blank") info@letstravel.org
-								
+						+e.search
+							+e.A(href="##")
+								i.fa.fa-search
 						+e.soc
 							+e.A(href="##")
 								i.fa.fa-google-plus
@@ -22,21 +17,28 @@ mixin header()
 								i.fa.fa-facebook
 							+e.A(href="##")
 								i.fa.fa-twitter
-						+e.authorize
-							+e.login
-								i.fa.fa-user
-								+e.A(href="##") Login
-							+e.singup
-								i.fa.fa-lock
-								+e.A(href="##") Sing Up
+						+e.contacts
+							+e.phone
+								i.fa.fa-mobile
+								span +48 788 387 555
+							+e.e-mail
+								i.fa.fa-envelope
+								+e.A(href="mailto:info@letstravel.org?subject=Qastion", target="_blank") info@letstravel.org	
+
+						//- +e.authorize
+						//- 	+e.login
+						//- 		i.fa.fa-user
+						//- 		+e.A(href="##") Login
+						//- 	+e.singup
+						//- 		i.fa.fa-lock
+						//- 		+e.A(href="##") Sing Up
 							
 					+b.second-line
 						+e.NAV.top-menu
 							+b.UL.menu
-								+b.menu-item
-									+e.A(href="##")
-										+e.text Home
-						+e.search
+								each item in data.menu
+									+b.menu-item
+										+e.A(href=item.hreaf)= item.name
 
 
 		

@@ -19,14 +19,41 @@ html(lang="ru")
 			+e.wrap
 
 				block header
-					+header()
-					
-					//- imported blocks
-					
+					+header({
+						"menu": [
+							{
+							"name": "Home",
+							"hreaf": "##"
+							},
+							{
+							"name": "Directions",
+							"hreaf": "##"
+							},
+							{
+							"name": "Transfers",
+							"hreaf": "##"
+							},
+							{
+							"name": "News",
+							"hreaf": "##"
+							},
+							{
+							"name": "Dates & Prices",
+							"hreaf": "##"
+							},
+							{
+							"name": "Gallery",
+							"hreaf": "##"
+							},
+							{
+							"name": "About us",
+							"hreaf": "##"
+							}
+						]
+					})
+
 				block content
 					section content
-					
-					//- imported blocks
 					
 				block footer
 					footer footer
