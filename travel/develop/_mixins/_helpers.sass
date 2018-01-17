@@ -1,0 +1,113 @@
+=overlay($over-color: $accent, $over-opacity: .5)
+	position: relative
+	background-size: cover
+	&:before
+		background-color: rgba($over-color, $over-opacity)
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+
+
+
+=btn-ract($btn-color: $accent, $fnt-color: #fff)
+	display: inline-block
+	border: none
+	color: $fnt-color
+	text-decoration: none
+	background-color: $btn-color
+	padding: 15px 45px
+	font-size: 13px
+	text-transform: uppercase
+	font-weight: 600
+	letter-spacing: 3px
+	border-radius: 2px
+	text-align: center
+	position: relative
+	outline: none
+	transition: background-color .3s ease
+	cursor: pointer
+	&::after
+		transition: background-color .2s ease
+		position: absolute
+		content: ''
+		height: 4px
+		bottom: 0
+		width: 100%
+		background-color: darken($btn-color, 50%)
+		opacity: .18
+		border-bottom-left-radius: 2px
+		border-bottom-right-radius: 2px
+		left: 0
+	&:focus, &:hover
+		text-decoration: none
+		color: $fnt-color
+	&:hover
+		background-color: lighten($btn-color, 5%)
+		&::after
+			opacity: .22
+	&:active
+		background-color: darken($btn-color, 5%)
+		&::after
+			opacity: .32
+
+	// &.button-white
+	// 	background-color: $white
+	// 	color: $text-dark
+	// 	&:after
+	// 		background-color: rgba(#000, .6)
+	// 	&:hover
+	// 		&:after
+	// 			background-color: rgba(#000, .2)
+	// 	&:active
+	// 		&:after
+	// 			background-color: rgba(#000, .4)
+
+=btn-oval($btn-color: $accent, $fnt-color: $font-color-dark)
+	display: inline-block
+	color: $fnt-color
+	text-decoration: none
+	padding: 15px 45px
+	font-size: 13px
+	text-transform: uppercase
+	font-weight: 600
+	letter-spacing: 3px
+	border-radius: 10em
+	text-align: center
+	position: relative
+	outline: none
+	cursor: pointer
+	border: 2px solid $btn-color
+	background: #fff
+	transition: all .3s
+	&::after
+		content: ""
+		position: absolute
+		bottom: 0
+		left: 10%
+		width: 80%
+		height: 100%
+		box-shadow: 0 6px 23px 0 rgba(0, 0, 0, 0.51)
+		transition: all .3s
+		z-index: -1
+	&:focus, &:hover
+		background-color: lighten($btn-color, 5%)
+		color: $font-color-light
+		&::after
+			box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.51)
+			opacity: 1
+
+
+	// &:focus, &:hover
+	// 	text-decoration: none
+	// 	color: $fnt-color
+	// &:hover
+	// 	background-color: lighten($btn-color, 5%)
+	// 	&::after
+	// 		opacity: .22
+	// &:active
+	// 	background-color: darken($btn-color, 5%)
+	// 	&::after
+	// 		opacity: .32

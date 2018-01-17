@@ -28,7 +28,6 @@
     "vinyl-ftp": "^0.6.0"
   },
   "dependencies": {
-    "fontforge": "0.0.4",
     "npm-check-updates": "^2.14.0"
   }
 }

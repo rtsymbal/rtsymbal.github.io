@@ -1,0 +1,11 @@
+mixin destination(data)
+	+b.SECTION.destination
+		+e.wrap
+			+e.container
+				+b.section-title
+					+e.H2.title Most popular destination
+				+b.grid-img
+					each item in data.grid
+						a(href=item.href)
+							img(src=item.link, alt=item.alt)
+				+b.a(href="##").button More
