@@ -3,16 +3,20 @@ include _assets/bemto/bemto
 
 include head/head
 include header/header
+include section/about/about
+include section/search/search
+include section/destination/destination
 
 doctype html
-html(lang="ru")
+html(lang="en")
 
 	block head
 		head
 			+head({
-				"title": "Title",
+				"title": "Let's Travel | The best travel agency",
 				"author": "Roman Tsymbal",
 				"description": "Template",
+				"path": "img/keepcalm.png"
 			})
 
 		+b.BODY.page
@@ -26,7 +30,7 @@ html(lang="ru")
 							"hreaf": "##"
 							},
 							{
-							"name": "Directions",
+							"name": "Destinations",
 							"hreaf": "##"
 							},
 							{
@@ -51,7 +55,8 @@ html(lang="ru")
 							}
 						]
 					})
-
+					
+					
 				block content
 					section content
 					
@@ -63,14 +68,14 @@ html(lang="ru")
 					
 			block styles			
 				// build:css css/main.css
-				link(rel="stylesheet", href="libs/font-awesome/css/font-awesome.min.css")
+				link(rel="stylesheet", href="libs/font-awesome/font-awesome.min.css")
 					//- plugin styles
 				link(rel="stylesheet", href="css/main.css")
 				// endbuild
 				
 			block scripts
 				// build:js js/main.js
-				script( src="libs/jquery/dist/jquery.min.js")
+				script( src="libs/jquery/jquery.min.js")
 				//- plugin scripts
 				script( src="js/main.js")
 				// endbuild

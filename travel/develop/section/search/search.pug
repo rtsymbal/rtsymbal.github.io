@@ -1,0 +1,26 @@
+mixin search()
+	+b.SECTION.search
+		+e.wrap--overlay(style="background-image: url(img/search-bg.jpg)")
+			
+			+b.search-widget
+				+e.plane-img
+					IMG(src="../img/plane.png", alt="plane")
+				+e.title
+					H2 Find your tour
+				+e.plane-bus
+					a(href="##") Plain
+					a(href="##") Bus
+				+b.FORM.form
+					+e.input-field
+						input(id="start_date" type="text" class="validate")
+						label(for="start_date") Start date
+					+e.input-field
+						input(id="start_date" type="text" class="validate")
+						label(for="start_date") Start date
+					+e.input-field
+						input(id="start_date" type="text" class="validate")
+						label(for="start_date") Start date
+					+e.input-field
+						input(id="start_date" type="text" class="validate")
+						label(for="start_date") Start date
+				+b.A(href="##").button Search
