@@ -8,6 +8,7 @@ include section/search/search
 include section/destination/destination
 include section/sale/sale
 include section/news/news
+include footer/footer
 
 doctype html
 html(lang="en")
@@ -63,9 +64,31 @@ html(lang="en")
 					section content
 					
 				block footer
-					footer footer
+					+footer({
+					"service": [
+						{
+						"href": "##",
+						"title": "Additional servece # one"
+						},
+						{
+						"href": "##",
+						"title": "Additional servece # two"
+						},
+						{
+						"href": "##",
+						"title": "Additional servece # three"
+						},
+						{
+						"href": "##",
+						"title": "Additional servece # four"
+						},
+						{
+						"href": "##",
+						"title": "Additional servece # five"
+						}
+					]
+					})
 					
-					//- imported blocks
 					
 					
 			block styles			
