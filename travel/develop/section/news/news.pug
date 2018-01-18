@@ -1,0 +1,16 @@
+mixin news(data)
+	+b.SECTION.news
+		+e.wrap
+			+b.section-title
+				+e.H2.title Last news
+			+b.news-grid
+				each item in data.news
+					+e.item
+						a(href=item.href)
+							IMG(src=item.link, alt=item.alt)
+							+b.H3.news-article= item.article
+						+b.news-bottom
+							+e.A.author(href=item.refa)= item.author
+							+e.A.date(href=item.refd)= item.date
+			+b.A.button.news-btn(href="##") view more
+			
