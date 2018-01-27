@@ -12,16 +12,16 @@ mixin search()
 					a(href="##") Bus
 				+b.FORM.form
 					+e.input-field
-						input(id="start_date" type="text" class="validate")
-						label(for="start_date") Start date
+						label(for="start_date") Destination
+						input(id="start_date" type="text" class="validate" placeholder="Type here...")
 					+e.input-field
-						input(id="start_date" type="text" class="validate")
 						label(for="start_date") Start date
+						input(id="start_date" type="text" class="validate" placeholder="Enter the date...")
+						
 					+e.input-field
-						input(id="start_date" type="text" class="validate")
-						label(for="start_date") Start date
+						label(for="start_date") End date
+						input(id="start_date" type="text" class="validate" placeholder="Enter the date...")
 					+e.input-field
-						input(id="start_date" type="text" class="validate")
-						label(for="start_date") Start date
-				+b.A(href="##").button Search
-					span
+						label(for="start_date") Number of persons
+						input(id="start_date" type="text" class="validate" placeholder="Enter the number...")
+				+b.A(href="##").search-button Search

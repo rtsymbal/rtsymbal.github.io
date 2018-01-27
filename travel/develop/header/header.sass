@@ -55,9 +55,25 @@
 			span
 				font-family: $main-font
 
-.rt-menu-item
-	display: inline-block
-	padding: 15px
+.rt-menu
+	&__item
+		display: inline-block
+		padding: 10px 15px
+		position: relative
+		overflow: hidden
+		&::before
+			position: absolute
+			left: 10%
+			bottom: 0
+			width: 80%
+			height: 3px
+			background: $accent
+			content: ""
+			transform: translate(-113%, 0)
+			transition: transform .3s ease
+		&:hover, .is-active
+			&::before
+				transform: translate(0, 0)
 
 .rt-intro
 	display: flex

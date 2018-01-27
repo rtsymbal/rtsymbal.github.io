@@ -29,7 +29,7 @@ mixin header(data)
 						+e.NAV.top-menu
 							+b.UL.menu
 								each item in data.menu
-									+b.menu-item
+									+e.LI.item
 										+e.A(href=item.hreaf)= item.name
 										
 		+b.intro
