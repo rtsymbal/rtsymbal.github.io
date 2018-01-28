@@ -1,6 +1,6 @@
 .rt-news
 	&__wrap
-		width: 1200px
+		max-width: 1200px
 		margin: 0 auto
 		padding: 0 15px
 
@@ -9,11 +9,15 @@
 	grid-template-columns: repeat(4, 1fr)
 	grid-gap: 25px
 	margin-bottom: 40px
+	+r(960)
+		grid-template-columns: repeat(2, 2fr)
+	+r(500)
+		grid-template-columns: 100%
 	&__item
 		display: block
 		position: relative
 		img
-			max-width: 100%
+			width: 100%
 
 .rt-news-article
 	display: block

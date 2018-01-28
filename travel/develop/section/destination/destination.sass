@@ -3,8 +3,10 @@
 		padding: 50px 15px
 
 	&__container
-		max-width: 1170px
 		margin: 0 auto
+		max-width: 1170px
+		+r(1200)
+			margin: 0 15px
 
 .rt-section-title
 	&__title
@@ -24,13 +26,17 @@
 	display: grid
 	grid-template-columns: repeat(4, 1fr)
 	grid-gap: 20px
+	+r(960)
+		grid-template-columns: repeat(2, 2fr)
+	+r(500)
+		grid-template-columns: 100%
 	img
 		display: block
 		width: 100%
 
 .rt-button
 	+btn-anim()
-		
+
 .rt-dest-btn
 	max-width: 200px
 	display: block

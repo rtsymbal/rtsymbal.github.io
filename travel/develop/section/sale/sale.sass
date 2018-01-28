@@ -1,16 +1,22 @@
 .rt-sale
 	&__wrap
-		width: 1200px
+		max-width: 1200px
 		margin: 0 auto
 		padding: 0 15px
 		display: flex
 		justify-content: flex-end
 		background: left center no-repeat
 		margin-bottom: 70px
+		+r(750)
+			text-shadow: 1px 1px 1px white
+
 
 .rt-text-field
 	width: span(7)
 	padding: 110px 0
+	+r(750)
+		width: span(12)
+		// text-shadow: 1px 1px 1px white
 	h2
 		text-align: center
 		text-transform: uppercase

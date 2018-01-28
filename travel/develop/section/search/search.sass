@@ -43,11 +43,18 @@
 				border-right: 2px solid $font-color-dark
 
 .rt-form
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
 	&__input-field
-		display: inline-block
-		width: span(3)
+		max-width: span(3)
 		margin-bottom: 30px
+		+r(960)
+			min-width: span(6)
+		+r(580)
+			min-width: span(12)
 		label
+			display: block
 			font-weight: bold
 			font-size: 14px
 		input
@@ -56,6 +63,9 @@
 			margin: 15px 0
 			padding: 8px 15px
 			color: #999
+			width: 200px
+			// +r(1000)
+			// 	width: 160px
 		::placeholder
 			color: #999
 			font-size: 13px
