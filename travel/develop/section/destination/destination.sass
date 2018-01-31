@@ -30,9 +30,27 @@
 		grid-template-columns: repeat(2, 2fr)
 	+r(500)
 		grid-template-columns: 100%
-	img
+	&__item
+		position: relative
+		transition: all 500ms linear
+		img
+			display: block
+			position: relative
+			width: 100%
+			filter: brightness(.7)
+			transition: all .5s ease
+			&:hover
+				filter: none
+
+	&__dest-title
+		position: absolute
+		top: 5%
+		left: 50%
 		display: block
-		width: 100%
+		white-space: nowrap
+		transform: translate(-50%, 0)
+		text-transform: uppercase
+
 
 .rt-button
 	+btn-anim()

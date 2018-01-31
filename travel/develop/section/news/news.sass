@@ -18,6 +18,11 @@
 		position: relative
 		img
 			width: 100%
+			filter: url(../img/_svg/filters.svg#kino)
+			filter: grayscale(.5)
+			transition: all .5s ease
+			&:hover
+				filter: none
 
 .rt-news-article
 	display: block
